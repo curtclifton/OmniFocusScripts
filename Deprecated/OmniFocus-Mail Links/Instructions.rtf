@@ -1,0 +1,301 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf440
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fswiss\fcharset77 Helvetica-Oblique;
+\f3\fnil\fcharset77 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc2\leveljcn2\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid0\'02\'05.;}{\levelnumbers\'01;}}{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww10740\viewh12240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs32 \cf0 OmniFocus-Mail Links
+\f1\b0\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs24 \cf0 by Curt Clifton
+\f1\b0\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs24 \cf0 \
+The scripts here allow you:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'a5	}to create OmniFocus actions that link to messages in Apple Mail\
+{\listtext	\'a5	}jump from linked OmniFocus actions back to the Mail message.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+From Mail you can manually create actions for selected messages.  You can also create Mail rules that automatically create actions for matching messages.  This is especially handy if you install Mail Act-On [{\field{\*\fldinst{HYPERLINK "http://www.indev.ca/MailActOn.html"}}{\fldrslt http://www.indev.ca/MailActOn.html}}], which lets you trigger Mail rules from a pop-up bezel or using hot keys.\
+\
+Beginning with version 0.5, these scripts rely on MailTags [{\field{\*\fldinst{HYPERLINK "http://www.indev.ca/MailTags.html"}}{\fldrslt http://www.indev.ca/MailTags.html}}] for link-back support.  If you do not wish to purchase MailTags, please download version 0.4 of the scripts.  (I am not affiliated with indev software in any way except as a satisfied customer.)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Installation
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 1. Copy the 
+\f2\i Add OmniFocus Action 
+\f1\i0 script and the 
+\f2\i Add OmniFocus Action without QE 
+\f1\i0 script into the folder:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f3 \cf0 	~/Library/Scripts/Applications/Mail\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+creating the folder(s) if necessary.\
+\
+2. Copy the 
+\f2\i Open Linked Item
+\f1\i0  script into the folder:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f3 \cf0 	~/Library/Scripts/Applications/OmniFocus\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+creating the folder(s) if necessary. (If you have an old 
+\f2\i Open Linked Mail Message 
+\f1\i0 script you can delete it.  The new script handles both Mail and web URL link back.\
+\
+3. If you are migrating from a version of these scripts prior to version 0.5, copy the 
+\f2\i Update Mail Link to New Format
+\f1\i0  script into the folder:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f3 \cf0 	~/Library/Scripts/Applications/OmniFocus\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1 \cf0 \
+4. Add the Scripts menu to your menu bar if you haven't already by opening the AppleScript Utility, located in /Applications/AppleScript/, and selecting the \'d2Show Script Menu in menu bar\'d3 checkbox. The menu should appear on the right side of the menu bar.\
+\
+5. If you would like to use the Mail Act-On integration, download and install Mail Act-On according the instructions on indev's website [{\field{\*\fldinst{HYPERLINK "http://www.indev.ca/MailActOn.html"}}{\fldrslt http://www.indev.ca/MailActOn.html}}].  (Do it!  It's free and awesome, all at the same time.)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Running\'d1Creating Actions
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 Creating Actions Manually
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 When running Mail, the 
+\f2\i Add OmniFocus Action
+\f1\i0  item should appear in the scripts menu.  Select a message in Mail, then run the script.  The OmniFocus QuickEntry window should appear.  You can press the Return key to send the action to OmniFocus, or you can press the Esc key to edit the action.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 Creating Actions Automatically with Mail Rules\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 Create a new rule in Mail (see Preferences, Rules pane). Add an action to the rule to Run Applescript.  Choose the 
+\f2\i Add OmniFocus Action without QE
+\f1\i0  script.  That's it! 
+\f0\b\fs28 \
+
+\f1\b0\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 Creating Actions using Mail Act-On\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 This is my preferred way to use the 
+\f2\i Add OmniFocus Action
+\f1\i0  script.  Create a new rule in Mail (see Preferences, Rules pane) using Mail Act-On's special naming convention.  For example:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sa120\ql\qnatural\pardirnatural
+
+\f2\i \cf0 Rule name
+\f1\i0 : Act-On: f | Add Omni-Focus Action\
+
+\f2\i Rule actions
+\f1\i0 : \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sa120\ql\qnatural\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'a5	}Run Applescript ~/Library/Scripts/Applications/Mail/Add OmniFocus Action.scpt\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sa120\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Running\'d1Jumping to Messages
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 Jumping to Linked Messages
+\f1\b0 \
+When running OmniFocus, the 
+\f2\i Open Linked Mail Message
+\f1\i0  item should appear in the scripts menu.  Select a linked action in OmniFocus, then run the script.  The linked message will open in Mail.\
+\
+You can also add the 
+\f2\i Open Linked Mail Message
+\f1\i0  script to your OmniFocus toolbar.  After installing the script, restart OmniFocus, right-click on the toolbar, and choose Customize Toolbar.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Settings\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 This section describes how to edit the 
+\f2\i Add OmniFocus Action
+\f1\i0  script to customize its behavior.  The same instructions also apply to the 
+\f2\i Add OmniFocus Action without QE
+\f1\i0  script.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 \
+Omit Sender\'d5s Name in Generated Actions
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Some people might prefer that the generated actions not include the sender\'d5s name.  You can change the 
+\f2\i Add OmniFocus Action
+\f1\i0  script to do this.  \
+\
+With Mail running, hold down the Option key and select the 
+\f2\i Add OmniFocus Action
+\f1\i0  script from the script menu.  The script should open in Script Editor.  Change the 
+\f3 includeSender
+\fs22  
+\f1\fs24 property from 
+\f3 true
+\f1  to 
+\f3 false
+\f1 .  Save the script and exit Script Editor.  That's it!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 \
+Change Prefix for Generated Actions
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Some people might prefer that the generated actions begin with different text besides "Respond to".  You can change the 
+\f2\i Add OmniFocus Action
+\f1\i0  script to do this.  \
+\
+With Mail running, hold down the Option key and select the 
+\f2\i Add OmniFocus Action
+\f1\i0  script from the script menu.  The script should open in Script Editor.  Change the 
+\f3 actionPrefix
+\fs22  
+\f1\fs24 property to whatever prefix you would like.  Save the script and exit Script Editor.  That's it!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 \
+Change Default Context
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 The 
+\f2\i Add OmniFocus Action
+\f1\i0  script creates a task with the context "Email" if such a context exists.  You can change the script to use a different default context.\
+\
+With Mail running, hold down the Option key and select the 
+\f2\i Add OmniFocus Action
+\f1\i0  script from the script menu.  The script should open in Script Editor.  Change the 
+\f3 defaultContext
+\fs22  
+\f1\fs24 property to whatever context you would like, or to "" (two quotes with no intervening space) if you don't want a default context.  Save the script and exit Script Editor.  That's it!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b \cf0 \
+Change the Amount of the Message Included in the OmniFocus Note Field
+\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0\fs24 \cf0 Some people might have different preference about how much of the message is included in the OmniFocus note field.  You can change the 
+\f2\i Add OmniFocus Action
+\f1\i0  script to control this.  \
+\
+With Mail running, hold down the Option key and select the 
+\f2\i Add OmniFocus Action
+\f1\i0  script from the script menu.  The script should open in Script Editor.  Change the 
+\f3 contentInclusionType
+\fs22  
+\f1\fs24 property to whatever value you like.  The choices are:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls3\ilvl0\cf0 {\listtext	\'a5	}full message content (
+\f3 fullContent
+\f1 )\
+{\listtext	\'a5	}three sentence summary of the content (
+\f3 summarizeContent
+\f1 )\
+{\listtext	\'a5	}first paragraph of the content (
+\f3 firstParagraphOfContent
+\f1 )\
+{\listtext	\'a5	}no content inclusion (
+\f3 noContentInclusion
+\f1 )\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+Save the script and exit Script Editor.  That's it!
+\f0\b \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\fs28 \cf0 Disclaimers
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 OmniFocus is still in alpha testing, so the scripts may break at any time.  I suspect that I'll continue to use and maintain them until the Omni Group provides built-in support, so I'm likely to maintain the scripts for awhile at least.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Versions\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls4\ilvl0
+\f1\b0\fs24 \cf0 {\listtext	\'a5	}0.8.1, updated for OmniFocus AppleScript implementation change\
+{\listtext	\'a5	}0.8, changed the main Add OF Action script to use the QuickEntry window, added a second script that doesn't use the QE window\
+{\listtext	\'a5	}0.7, eliminated selected text inclusion mode, it was buggy, updated for OmniFocus AppleScript dictionary change\
+{\listtext	\'a5	}0.6, includes optional code to set the default context of created actions\
+{\listtext	\'a5	}0.5, first version that requires MailTags\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 Contributors\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls5\ilvl0
+\f1\b0\fs24 \cf0 {\listtext	\'a5	}Inspired by an initial script posted by zooids to the OmniFocus forums [http://forums.omnigroup.com/showthread.php?t=3783].\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 License
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f1\b0 \cf0 Copyright \'a9 2007, Curtis Clifton\
+	\
+All rights reserved.\
+\
+The script to create an action in OmniFocus was inspired by an original script posted by zooids to the OmniFocus forums [http://forums.omnigroup.com/showthread.php?t=3783].\
+	\
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\
+	\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\ql\qnatural\pardirnatural
+\ls6\ilvl0\cf0 {\listtext	\'a5	}Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\
+{\listtext	\'a5	}Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 		\
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\
+\
+Curt Clifton\
+curt.clifton@mac.com\
+\
+}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Breakpoints</key>
+	<dict>
+		<key>WhereTheActionIs.js:139</key>
+		<string>-tellOFtoShowContext</string>
+		<key>WhereTheActionIs.js:200</key>
+		<string>-fadeLoadingStampToOpacity</string>
+		<key>WhereTheActionIs.js:208</key>
+		<string>-fadeLoadingStampToOpacity</string>
+	</dict>
+	<key>ContentSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>8</integer>
+		<key>SplitViewConfig</key>
+		<integer>1</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {804, 402}}</string>
+			<string>{{0, 412}, {804, 387}}</string>
+		</array>
+	</dict>
+	<key>ContentViewType</key>
+	<integer>0</integer>
+	<key>Dashboard Widget Prefs</key>
+	<dict>
+		<key>id</key>
+		<string>ce37e2aef294ac41</string>
+		<key>in-layer</key>
+		<true/>
+		<key>path</key>
+		<string>/private/var/folders/Tb/TbIVLTFUE0i5ftXFDox9I++++TM/-Tmp-/Dashcode/.Where To Focus.wdgtproj82IRSu/Where To Focus.wdgtproj/project.wdgt/</string>
+		<key>percent-offset-x</key>
+		<integer>0</integer>
+		<key>percent-offset-y</key>
+		<integer>0</integer>
+		<key>percent-type</key>
+		<integer>3</integer>
+		<key>percent-x</key>
+		<real>0.23749999701976776</real>
+		<key>percent-y</key>
+		<real>0.34111112356185913</real>
+		<key>pos-x</key>
+		<integer>2508</integer>
+		<key>pos-y</key>
+		<integer>617</integer>
+		<key>rosetta</key>
+		<false/>
+	</dict>
+	<key>DeploymentOptions</key>
+	<dict>
+		<key>Account</key>
+		<string>file://localhost/Users/cclifton/Sites/</string>
+		<key>Save</key>
+		<true/>
+		<key>SavePath</key>
+		<string>/Users/cclifton/Desktop/Outbox</string>
+	</dict>
+	<key>Design time language</key>
+	<string>en.lproj</string>
+	<key>EvaluatorFrame</key>
+	<string>120 82 479 226 0 0 1680 1028 </string>
+	<key>MainSplitViewGeometry</key>
+	<dict>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {244, 820}}</string>
+			<string>{{245, 0}, {805, 820}}</string>
+		</array>
+	</dict>
+	<key>MainWindowFrame</key>
+	<string>184 187 1049 841 0 0 1680 1028 </string>
+	<key>NavigatorSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>5</integer>
+		<key>SplitViewConfig</key>
+		<integer>1</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {246, 353}}</string>
+			<string>{{0, 363}, {246, 436}}</string>
+		</array>
+	</dict>
+	<key>Objects view expanded items</key>
+	<array>
+		<array>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>9</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>9</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>7</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>6</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>6</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>5</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>4</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>4</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>5</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>4</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>4</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>5</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>4</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>5</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>7</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>8</integer>
+		</array>
+	</array>
+	<key>Objects view last selections</key>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+	</array>
+	<key>Opened Steps</key>
+	<array>
+		<integer>5</integer>
+	</array>
+	<key>Visible StackLayout Views</key>
+	<array>
+		<string>front</string>
+	</array>
+	<key>Widget</key>
+	<dict>
+		<key>Objects view last selections</key>
+		<array/>
+		<key>Visible StackLayout Views</key>
+		<array>
+			<string>front</string>
+		</array>
+	</dict>
+</dict>
+</plist>

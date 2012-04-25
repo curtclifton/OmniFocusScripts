@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/utilities.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/setup.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Text.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/InfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/GlassButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/List.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/ButtonHandler.js" charset="utf-8"></script>
+</head>
+<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
+    <div id="front">
+        <img id="frontImg" src="Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 1; image-shape: 3; image-opacity: 1.00; image-top-color: 1.0000,1.0000,1.0000; image-bottom-color: 0.6154,0.6154,0.6154; image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.5294,0.5294,0.5294; image-border-width: 1; shine-strength: 0.9; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" id="frontTitleText" apple-group="text"></div>
+        <ul apple-part="com.apple.Dashcode.part.widgetList" id="list">
+            <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template">
+                <div apple-part="com.apple.Dashcode.part.checkboxbutton" id="actionGroup" apple-group="checkboxbutton" class="actionGroup_template" onclick="actionClicked(event)">
+                    <input type="checkbox" name="Item" id="actionCheckbox" apple-group="checkboxbutton" value="">
+                    <div id="actionLabel" class="actionLabel_template" apple-text-overflow="ellipsis">Complete TPS Report</div>
+                </div>
+            </li>
+        </ul>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="hoverText" apple-style="part-height-dependent: true;"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
+        <div apple-part="com.apple.Dashcode.part.checkboxbutton" id="includeProjectNamesGroup" apple-group="checkboxbutton2">
+            <input type="checkbox" name="Checkbox" checked="checked" id="includeProjectNamesCheckbox" apple-group="checkboxbutton2" onclick="includeProjectNamesClicked(event)">
+            <div id="includeProjectNamesLabel">Include Project Names</div>
+        </div>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="text2"></div>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" id="backTitleText" apple-group="text" apple-default-image-visibility="hidden"></div>
+    </div>
+</body>
+</html>

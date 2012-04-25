@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Breakpoints</key>
+	<dict>
+		<key>main.js:210</key>
+		<string>-prepareRow</string>
+	</dict>
+	<key>ContentSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>8</integer>
+		<key>SplitViewConfig</key>
+		<integer>1</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {897, 402}}</string>
+			<string>{{0, 412}, {897, 351}}</string>
+		</array>
+	</dict>
+	<key>ContentViewType</key>
+	<integer>0</integer>
+	<key>Dashboard Widget Prefs</key>
+	<dict>
+		<key>id</key>
+		<string>9049fe68c37ab041</string>
+		<key>in-layer</key>
+		<true/>
+		<key>path</key>
+		<string>/private/var/folders/Tb/TbIVLTFUE0i5ftXFDox9I++++TM/-Tmp-/Dashcode/.What are You Doing Here.dcprojCB0QDD/What are You Doing Here.dcproj/project.wdgt/</string>
+		<key>percent-offset-x</key>
+		<integer>0</integer>
+		<key>percent-offset-y</key>
+		<integer>0</integer>
+		<key>percent-type</key>
+		<integer>3</integer>
+		<key>percent-x</key>
+		<real>0.11488094925880432</real>
+		<key>percent-y</key>
+		<real>0.30666667222976685</real>
+		<key>pos-x</key>
+		<integer>1207</integer>
+		<key>pos-y</key>
+		<integer>492</integer>
+		<key>rosetta</key>
+		<false/>
+	</dict>
+	<key>DeploymentOptions</key>
+	<dict>
+		<key>Destination</key>
+		<string>localhost.default</string>
+		<key>enableSimulation</key>
+		<true/>
+		<key>simulatedHost</key>
+		<string>Curts-MacBook-Pro.local</string>
+	</dict>
+	<key>Design time language</key>
+	<string>en.lproj</string>
+	<key>MainSplitViewGeometry</key>
+	<dict>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {244, 784}}</string>
+			<string>{{245, 0}, {898, 784}}</string>
+		</array>
+	</dict>
+	<key>MainWindowFrame</key>
+	<string>20 207 1142 805 0 0 1680 1028 </string>
+	<key>NavigatorSplitViewGeometry</key>
+	<dict>
+		<key>ContentSplitViewConfig</key>
+		<integer>5</integer>
+		<key>SplitViewConfig</key>
+		<integer>1</integer>
+		<key>_indexOfCollapsedView</key>
+		<integer>0</integer>
+		<key>sizes</key>
+		<array>
+			<string>{{0, 0}, {246, 353}}</string>
+			<string>{{0, 363}, {246, 400}}</string>
+		</array>
+	</dict>
+	<key>Objects view expanded items</key>
+	<array>
+		<array>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>2</integer>
+		</array>
+	</array>
+	<key>Objects view last selections</key>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+	</array>
+	<key>Opened Steps</key>
+	<array>
+		<integer>3</integer>
+	</array>
+	<key>Visible StackLayout Views</key>
+	<array>
+		<string>front</string>
+	</array>
+	<key>Widget</key>
+	<dict>
+		<key>Objects view last selections</key>
+		<array/>
+		<key>Visible StackLayout Views</key>
+		<array>
+			<string>front</string>
+		</array>
+	</dict>
+</dict>
+</plist>
