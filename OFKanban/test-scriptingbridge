@@ -1,0 +1,6 @@
+#!/usr/local/bin/macruby
+
+framework "ScriptingBridge"
+
+safari = SBApplication.applicationWithBundleIdentifier("com.apple.Safari")
+safari.windows.each {|window| puts window.currentTab.name}
