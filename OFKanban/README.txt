@@ -2,7 +2,12 @@ Note that rb-appscript is discontinued and rbosa also hasn't been updated in yea
 
 http://macruby.com/downloads.html
 
-A useful tutorial: http://arstechnica.com/apple/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge/
+Useful tutorials:
+
+http://arstechnica.com/apple/2011/09/tutorial-os-x-automation-with-macruby-and-the-scripting-bridge/
+
+http://macruby.com/documentation/tutorial.html
+
 
 
 
