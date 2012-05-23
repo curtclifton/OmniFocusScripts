@@ -33,12 +33,18 @@
     NSUInteger taskCount = [[defaultDocument flattenedTasks] count];
     NSLog(@"Default document has %ld tasks", taskCount);
     
-    SBElementArray *tasks = [defaultDocument flattenedTasks];
-    // CCC, 5/22/2012. This is dog slow because of all the events sent:
-    NSArray *availableTasks = [tasks arrayWithObjectsMatching:^BOOL(SBObject *object) {
-        OmniFocusTask *task = (OmniFocusTask *)object;
-        return !task.blocked;
-    }];
+    SBElementArray *contexts = [defaultDocument flattenedContexts];
+    NSMutableArray *availableTasks = [NSMutableArray new];
+    for (SBObject *obj in contexts) {
+        OmniFocusContext *context = (OmniFocusContext *)obj;
+        SBElementArray *availableTasksInContext = [context availableTasks];
+        [availableTasks addObjectsFromArray:availableTasksInContext];
+    }
+    
+    for (SBObject *obj in availableTasks) {
+        OmniFocusTask *task = (OmniFocusTask *)obj;
+        NSLog(@"%@", [task name]);
+    }
     NSLog(@"and %ld available tasks.", [availableTasks count]);
 }
 
