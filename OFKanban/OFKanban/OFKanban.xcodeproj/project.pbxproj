@@ -15,6 +15,7 @@
 		F7062220156CB47B0023500A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F706221E156CB47B0023500A /* MainMenu.xib */; };
 		F7062227156CB5140023500A /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7062226156CB5140023500A /* ScriptingBridge.framework */; };
 		F706222C156CBBAD0023500A /* SBElementArray+CCKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */; };
+		F78175541575C80400CF3201 /* CCKTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F78175531575C80400CF3201 /* CCKTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		F7062228156CB80A0023500A /* OmniFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniFocus.h; sourceTree = "<group>"; };
 		F706222A156CBBAD0023500A /* SBElementArray+CCKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBElementArray+CCKExtensions.h"; sourceTree = "<group>"; };
 		F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBElementArray+CCKExtensions.m"; sourceTree = "<group>"; };
+		F78175521575C80400CF3201 /* CCKTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTask.h; sourceTree = "<group>"; };
+		F78175531575C80400CF3201 /* CCKTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				F7062210156CB47A0023500A /* Supporting Files */,
 				F706222A156CBBAD0023500A /* SBElementArray+CCKExtensions.h */,
 				F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */,
+				F78175521575C80400CF3201 /* CCKTask.h */,
+				F78175531575C80400CF3201 /* CCKTask.m */,
 			);
 			path = OFKanban;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				F7062216156CB47A0023500A /* main.m in Sources */,
 				F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */,
 				F706222C156CBBAD0023500A /* SBElementArray+CCKExtensions.m in Sources */,
+				F78175541575C80400CF3201 /* CCKTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +308,7 @@
 				F7062225156CB47B0023500A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

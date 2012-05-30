@@ -41,9 +41,13 @@
         [availableTasks addObjectsFromArray:availableTasksInContext];
     }
     
+    NSMutableSet *backlogTasks = [NSMutableSet new];
+    NSMutableSet *wipTasks = [NSMutableSet new];
     for (SBObject *obj in availableTasks) {
         OmniFocusTask *task = (OmniFocusTask *)obj;
-        NSLog(@"%@", [task name]);
+        id dueDate = [task.dueDate get];
+        BOOL isFlagged = task.flagged;
+        NSLog(@"%@ %@ %@", task.name, dueDate, isFlagged ? @"flagged" : @"not flagged");
     }
     NSLog(@"and %ld available tasks.", [availableTasks count]);
 }
