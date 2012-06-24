@@ -3,7 +3,7 @@
 //  OFKanban
 //
 //  Created by Curt Clifton on 5/22/12.
-//  Copyright (c) 2012 The Omni Group. All rights reserved.
+//  Copyright (c) 2012 Curtis Clifton. All rights reserved.
 //
 
 #import <ScriptingBridge/ScriptingBridge.h>
