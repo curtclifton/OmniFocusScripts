@@ -36,6 +36,7 @@
 		F7062228156CB80A0023500A /* OmniFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniFocus.h; sourceTree = "<group>"; };
 		F706222A156CBBAD0023500A /* SBElementArray+CCKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBElementArray+CCKExtensions.h"; sourceTree = "<group>"; };
 		F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBElementArray+CCKExtensions.m"; sourceTree = "<group>"; };
+		F716096115979B180075CEE9 /* GetTasks.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = GetTasks.scpt; sourceTree = "<group>"; };
 		F78175521575C80400CF3201 /* CCKTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTask.h; sourceTree = "<group>"; };
 		F78175531575C80400CF3201 /* CCKTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +103,7 @@
 				F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */,
 				F78175521575C80400CF3201 /* CCKTask.h */,
 				F78175531575C80400CF3201 /* CCKTask.m */,
+				F716096115979B180075CEE9 /* GetTasks.scpt */,
 			);
 			path = OFKanban;
 			sourceTree = "<group>";
