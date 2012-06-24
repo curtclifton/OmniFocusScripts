@@ -17,6 +17,7 @@
 		F706222C156CBBAD0023500A /* SBElementArray+CCKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */; };
 		F716096415979C840075CEE9 /* CCKTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F716096315979C840075CEE9 /* CCKTaskFactory.m */; };
 		F716096615979D530075CEE9 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F716096515979D530075CEE9 /* OSAKit.framework */; };
+		F71609671597A6AC0075CEE9 /* GetTasks.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F716096115979B180075CEE9 /* GetTasks.scpt */; };
 		F78175541575C80400CF3201 /* CCKTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F78175531575C80400CF3201 /* CCKTask.m */; };
 /* End PBXBuildFile section */
 
@@ -181,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71609671597A6AC0075CEE9 /* GetTasks.scpt in Resources */,
 				F7062214156CB47A0023500A /* InfoPlist.strings in Resources */,
 				F706221A156CB47A0023500A /* Credits.rtf in Resources */,
 				F7062220156CB47B0023500A /* MainMenu.xib in Resources */,

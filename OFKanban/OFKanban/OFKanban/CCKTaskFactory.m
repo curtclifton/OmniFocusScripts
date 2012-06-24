@@ -16,8 +16,16 @@ static OSAScript *fetchingScript;
 @implementation CCKTaskFactory
 + (void)initialize;
 {
-    // CCC, 6/24/2012. use initWithContentsOfURL:... once this is conceptually working
-    fetchingScript = [[OSAScript alloc] initWithSource:scriptAsString];
+    NSBundle *factoryBundle = [NSBundle bundleForClass:self];
+    NSURL *scriptURL = [factoryBundle URLForResource:@"GetTasks" withExtension:@"scpt"];
+    OSALanguageInstance *language = [OSALanguageInstance languageInstanceWithLanguage:[OSALanguage languageForName:@"AppleScript"]];
+    NSError *error;
+    fetchingScript = [[OSAScript alloc] initWithContentsOfURL:scriptURL languageInstance:language usingStorageOptions:OSANull error:&error];
+    if (!fetchingScript) {
+        // CCC, 6/24/2012. Handle error.
+        NSLog(@"Error getting script: %@", error);
+        abort();
+    }
 }
 
 
