@@ -12,6 +12,7 @@
 
 #import "OmniFocus.h"
 #import "SBElementArray+CCKExtensions.h"
+#import "CCKTaskFactory.h"
 
 @implementation CCKAppDelegate
 @synthesize window = _window;
@@ -19,6 +20,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    // CCC, 6/24/2012. Let's try using OSAScript instead. Just hacking this in here for experimentation:
+    NSArray *backlog = [CCKTaskFactory backlogTasks];
+    NSLog(@"backlog:\n%@", backlog);
+#if 0
+    // CCC, 6/24/2012. Decide between scripting bridge and OSAScript, delete and unlink the other.
     // CCC, 5/22/2012.  Just putting some code here temporarily to get the scripting bridge working;
     id omnifocusApplication = [SBApplication applicationWithBundleIdentifier:@"com.omnigroup.OmniFocus"];
     if (!omnifocusApplication)
@@ -50,6 +56,7 @@
         NSLog(@"%@ %@ %@", task.name, dueDate, isFlagged ? @"flagged" : @"not flagged");
     }
     NSLog(@"and %ld available tasks.", [availableTasks count]);
+#endif
 }
 
 @end
