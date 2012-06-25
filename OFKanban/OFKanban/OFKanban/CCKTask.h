@@ -11,5 +11,5 @@
 @class OmniFocusTask;
 
 @interface CCKTask : NSObject
-- (id)initWithOmniFocusTask:(OmniFocusTask *)task;
+- (id)initWithTaskID:(NSString *)taskID;
 @end

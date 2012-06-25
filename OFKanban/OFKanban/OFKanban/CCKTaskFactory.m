@@ -10,6 +10,8 @@
 
 #import <OSAKit/OSAKit.h>
 
+#import "NSAppleEventDescriptor+ValueUnboxing.h"
+
 static NSString *scriptAsString = @"on getBacklogTaskIDs()\n    return {\"hello\", \"world\"}\nend getText";
 static OSAScript *fetchingScript;
 
@@ -57,10 +59,22 @@ static OSAScript *fetchingScript;
     handlerName = [handlerName lowercaseString];
     NSDictionary *errorDictionary;
     NSAppleEventDescriptor *result = [fetchingScript executeHandlerWithName:handlerName arguments:[NSArray array] error:&errorDictionary];
-    // CCC, 6/24/2012. Handle non-empty errorDictionary
-    // CCC, 6/24/2012. Parse results.
     NSLog(@"result: %@", result);
-    NSLog(@"errorDictionary: %@", errorDictionary);
-    return [NSArray new];
+    if (!result) {
+        // CCC, 6/24/2012. Handle non-empty errorDictionary
+        NSLog(@"fetching error: %@", errorDictionary);
+        abort();
+    }
+    
+    NSError *error;
+    NSArray *resultArray = [result arrayValue:&error];
+    if (!result) {
+        // CCC, 6/24/2012. Handle error
+        NSLog(@"unboxing error: %@", error);
+        abort();
+    }
+    
+    // CCC, 6/24/2012. Instantiate task objects from the task IDs.
+    return resultArray;
 }
 @end

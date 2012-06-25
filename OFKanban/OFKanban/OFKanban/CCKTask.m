@@ -11,8 +11,8 @@
 #import "OmniFocus.h"
 
 @implementation CCKTask
-- (id)initWithOmniFocusTask:(OmniFocusTask *)task;
+- (id)initWithTaskID:(NSString *)taskID;
 {
-    
+    return nil;
 }
 @end

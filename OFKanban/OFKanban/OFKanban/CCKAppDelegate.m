@@ -22,7 +22,9 @@
     // Insert code here to initialize your application
     // CCC, 6/24/2012. Let's try using OSAScript instead. Just hacking this in here for experimentation:
     NSArray *backlog = [CCKTaskFactory backlogTasks];
-    NSLog(@"backlog:\n%@", backlog);
+    for (id taskID in backlog) {
+        NSLog(@"taskID %@ of type %@", taskID, [taskID class]);
+    }
 #if 0
     // CCC, 6/24/2012. Decide between scripting bridge and OSAScript, delete and unlink the other.
     // CCC, 5/22/2012.  Just putting some code here temporarily to get the scripting bridge working;
