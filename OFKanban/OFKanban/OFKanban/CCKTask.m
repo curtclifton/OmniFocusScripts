@@ -11,8 +11,26 @@
 #import "OmniFocus.h"
 
 @implementation CCKTask
+
 - (id)initWithTaskID:(NSString *)taskID;
 {
-    return nil;
+    if (!(self = [super init]))
+        return nil;
+    
+    _taskID = [taskID copy];
+    
+    return self;
 }
+
+#pragma mark NSObject subclass
+
+- (NSString *)description;
+{
+    return [NSString stringWithFormat:@"Task ID = %@", self.taskID];
+}
+
+#pragma mark Public API
+
+@synthesize taskID = _taskID;
+
 @end

@@ -10,7 +10,14 @@
 
 #import <OSAKit/OSAKit.h>
 
+#import "CCKTask.h"
 #import "NSAppleEventDescriptor+ValueUnboxing.h"
+
+#if 0 && defined(DEBUG)
+#define DEBUG_FACTORY(format, ...) NSLog(@"FACTORY: " format, ## __VA_ARGS__)
+#else
+#define DEBUG_FACTORY(format, ...)
+#endif
 
 static NSString *scriptAsString = @"on getBacklogTaskIDs()\n    return {\"hello\", \"world\"}\nend getText";
 static OSAScript *fetchingScript;
@@ -59,7 +66,7 @@ static OSAScript *fetchingScript;
     handlerName = [handlerName lowercaseString];
     NSDictionary *errorDictionary;
     NSAppleEventDescriptor *result = [fetchingScript executeHandlerWithName:handlerName arguments:[NSArray array] error:&errorDictionary];
-    NSLog(@"result: %@", result);
+    DEBUG_FACTORY(@"result: %@", result);
     if (!result) {
         // CCC, 6/24/2012. Handle non-empty errorDictionary
         NSLog(@"fetching error: %@", errorDictionary);
@@ -67,14 +74,18 @@ static OSAScript *fetchingScript;
     }
     
     NSError *error;
-    NSArray *resultArray = [result arrayValue:&error];
+    NSArray *taskIDArray = [result arrayValue:&error];
     if (!result) {
         // CCC, 6/24/2012. Handle error
         NSLog(@"unboxing error: %@", error);
         abort();
     }
     
-    // CCC, 6/24/2012. Instantiate task objects from the task IDs.
-    return resultArray;
+    NSMutableArray *taskArray = [NSMutableArray new];
+    for (NSString *taskID in taskIDArray) {
+        [taskArray addObject:[[CCKTask alloc] initWithTaskID:taskID]];
+    }
+    
+    return taskArray;
 }
 @end
