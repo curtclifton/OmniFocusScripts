@@ -13,8 +13,6 @@
 		F706221A156CB47A0023500A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F7062218156CB47A0023500A /* Credits.rtf */; };
 		F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F706221C156CB47A0023500A /* CCKAppDelegate.m */; };
 		F7062220156CB47B0023500A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F706221E156CB47B0023500A /* MainMenu.xib */; };
-		F7062227156CB5140023500A /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7062226156CB5140023500A /* ScriptingBridge.framework */; };
-		F706222C156CBBAD0023500A /* SBElementArray+CCKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */; };
 		F716096415979C840075CEE9 /* CCKTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F716096315979C840075CEE9 /* CCKTaskFactory.m */; };
 		F716096615979D530075CEE9 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F716096515979D530075CEE9 /* OSAKit.framework */; };
 		F71609671597A6AC0075CEE9 /* GetTasks.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F716096115979B180075CEE9 /* GetTasks.scpt */; };
@@ -38,8 +36,6 @@
 		F706221F156CB47B0023500A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F7062226156CB5140023500A /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		F7062228156CB80A0023500A /* OmniFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniFocus.h; sourceTree = "<group>"; };
-		F706222A156CBBAD0023500A /* SBElementArray+CCKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBElementArray+CCKExtensions.h"; sourceTree = "<group>"; };
-		F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBElementArray+CCKExtensions.m"; sourceTree = "<group>"; };
 		F716096115979B180075CEE9 /* GetTasks.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = GetTasks.scpt; sourceTree = "<group>"; };
 		F716096215979C840075CEE9 /* CCKTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTaskFactory.h; sourceTree = "<group>"; };
 		F716096315979C840075CEE9 /* CCKTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTaskFactory.m; sourceTree = "<group>"; };
@@ -56,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F716096615979D530075CEE9 /* OSAKit.framework in Frameworks */,
-				F7062227156CB5140023500A /* ScriptingBridge.framework in Frameworks */,
 				F706220A156CB47A0023500A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +105,6 @@
 				F706221E156CB47B0023500A /* MainMenu.xib */,
 				F7062228156CB80A0023500A /* OmniFocus.h */,
 				F7062210156CB47A0023500A /* Supporting Files */,
-				F706222A156CBBAD0023500A /* SBElementArray+CCKExtensions.h */,
-				F706222B156CBBAD0023500A /* SBElementArray+CCKExtensions.m */,
 				F78175521575C80400CF3201 /* CCKTask.h */,
 				F78175531575C80400CF3201 /* CCKTask.m */,
 				F716096115979B180075CEE9 /* GetTasks.scpt */,
@@ -203,7 +196,6 @@
 			files = (
 				F7062216156CB47A0023500A /* main.m in Sources */,
 				F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */,
-				F706222C156CBBAD0023500A /* SBElementArray+CCKExtensions.m in Sources */,
 				F78175541575C80400CF3201 /* CCKTask.m in Sources */,
 				F716096415979C840075CEE9 /* CCKTaskFactory.m in Sources */,
 				F716096A1597E50E0075CEE9 /* NSAppleEventDescriptor+ValueUnboxing.m in Sources */,
