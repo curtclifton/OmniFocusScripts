@@ -20,7 +20,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    // CCC, 6/24/2012. Let's try using OSAScript instead. Just hacking this in here for experimentation:
+    // CCC, 6/24/2012. Just hacking this in here for experimentation:
     NSArray *backlog = [CCKTaskFactory backlogTasks];
     for (id taskID in backlog) {
         NSLog(@"taskID %@ of type %@", taskID, [taskID class]);
