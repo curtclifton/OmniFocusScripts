@@ -1,5 +1,5 @@
 //
-//  NSAppleEventDescriptor+ValueUnboxing.h
+//  NSAppleEventDescriptor+CCKValueUnboxing.h
 //  OFKanban
 //
 //  Created by Curt Clifton on 6/24/12.

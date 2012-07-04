@@ -11,7 +11,7 @@
 #import <OSAKit/OSAKit.h>
 
 #import "CCKTask.h"
-#import "NSAppleEventDescriptor+ValueUnboxing.h"
+#import "NSAppleEventDescriptor+CCKValueUnboxing.h"
 
 #if 0 && defined(DEBUG)
 #define DEBUG_FACTORY(format, ...) NSLog(@"FACTORY: " format, ## __VA_ARGS__)
