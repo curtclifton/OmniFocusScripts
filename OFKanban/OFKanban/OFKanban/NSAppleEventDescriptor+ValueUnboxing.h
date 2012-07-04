@@ -10,7 +10,7 @@
 
 extern NSString * const CCKOffendingDescriptorKey;
 
-@interface NSAppleEventDescriptor (ValueUnboxing)
+@interface NSAppleEventDescriptor (CCKValueUnboxing)
 - (NSArray *)arrayValue:(NSError **)error;
 - (NSDictionary *)dictionaryValue:(NSError **)error;
 @end

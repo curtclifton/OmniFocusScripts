@@ -236,7 +236,7 @@ static id _ValueByUnboxingAppleEventDescriptor(NSAppleEventDescriptor *descripto
     return value;
 }
 
-@implementation NSAppleEventDescriptor (ValueUnboxing)
+@implementation NSAppleEventDescriptor (CCKValueUnboxing)
 - (NSArray *)arrayValue:(NSError **)error;
 {
     if ([self descriptorType] != typeAEList) {
