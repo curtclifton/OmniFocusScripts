@@ -13,4 +13,5 @@ extern NSString * const CCKOffendingDescriptorKey;
 @interface NSAppleEventDescriptor (CCKValueUnboxing)
 - (NSArray *)arrayValue:(NSError **)error;
 - (NSDictionary *)dictionaryValue:(NSError **)error;
+- (id)unboxedValue:(NSError **)error;
 @end

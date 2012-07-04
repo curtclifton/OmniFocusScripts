@@ -260,4 +260,10 @@ static id _ValueByUnboxingAppleEventDescriptor(NSAppleEventDescriptor *descripto
     
     return _ValueByUnboxingAppleEventDescriptor(self, error);
 }
+
+- (id)unboxedValue:(NSError **)error;
+{
+    return _ValueByUnboxingAppleEventDescriptor(self, error);
+}
+
 @end

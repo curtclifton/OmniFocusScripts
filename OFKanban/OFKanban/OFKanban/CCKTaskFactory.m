@@ -12,6 +12,7 @@
 
 #import "CCKTask.h"
 #import "NSAppleEventDescriptor+CCKValueUnboxing.h"
+#import "OSAScript+CCKAppleScript.h"
 
 #if 0 && defined(DEBUG)
 #define DEBUG_FACTORY(format, ...) NSLog(@"FACTORY: " format, ## __VA_ARGS__)
@@ -25,16 +26,7 @@ static OSAScript *fetchingScript;
 @implementation CCKTaskFactory
 + (void)initialize;
 {
-    NSBundle *factoryBundle = [NSBundle bundleForClass:self];
-    NSURL *scriptURL = [factoryBundle URLForResource:@"GetTasks" withExtension:@"scpt"];
-    OSALanguageInstance *language = [OSALanguageInstance languageInstanceWithLanguage:[OSALanguage languageForName:@"AppleScript"]];
-    NSError *error;
-    fetchingScript = [[OSAScript alloc] initWithContentsOfURL:scriptURL languageInstance:language usingStorageOptions:OSANull error:&error];
-    if (!fetchingScript) {
-        // CCC, 6/24/2012. Handle error.
-        NSLog(@"Error getting script: %@", error);
-        abort();
-    }
+    fetchingScript = [OSAScript scriptWithName:@"GetTasks" inBundle:[NSBundle bundleForClass:self]];
 }
 
 
@@ -62,25 +54,7 @@ static OSAScript *fetchingScript;
 #pragma  mark Private API
 + (NSArray *)tasksFromHandlerNamed:(NSString *)handlerName;
 {
-    // Must invoke handlers using all-lowercase names.
-    handlerName = [handlerName lowercaseString];
-    NSDictionary *errorDictionary;
-    NSAppleEventDescriptor *result = [fetchingScript executeHandlerWithName:handlerName arguments:[NSArray array] error:&errorDictionary];
-    DEBUG_FACTORY(@"result: %@", result);
-    if (!result) {
-        // CCC, 6/24/2012. Handle non-empty errorDictionary
-        NSLog(@"fetching error: %@", errorDictionary);
-        abort();
-    }
-    
-    NSError *error;
-    NSArray *taskIDArray = [result arrayValue:&error];
-    if (!result) {
-        // CCC, 6/24/2012. Handle error
-        NSLog(@"unboxing error: %@", error);
-        abort();
-    }
-    
+    NSArray *taskIDArray = [fetchingScript executeHandlerWithName:handlerName arguments:[NSArray array]];
     NSMutableArray *taskArray = [NSMutableArray new];
     for (NSString *taskID in taskIDArray) {
         [taskArray addObject:[[CCKTask alloc] initWithTaskID:taskID]];
