@@ -248,4 +248,16 @@ static id _ValueByUnboxingAppleEventDescriptor(NSAppleEventDescriptor *descripto
     
     return _ValueByUnboxingAppleEventDescriptor(self, error);
 }
+
+- (NSDictionary *)dictionaryValue:(NSError **)error;
+{
+    if ([self descriptorType] != typeAERecord) {
+        if (error != NULL) {
+            *error = _ErrorWithCodeForOffendingDescriptor(errAEWrongDataType, self);
+        }
+        return nil;
+    }
+    
+    return _ValueByUnboxingAppleEventDescriptor(self, error);
+}
 @end

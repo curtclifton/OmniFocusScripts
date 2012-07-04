@@ -14,5 +14,6 @@
 - (id)initWithTaskID:(NSString *)taskID;
 
 // CCC, 6/24/2012. Add read-only properties for the other bits you need to visualize tasks. Probably will want to initialize those lazily to reduce AS traffic?
-@property (nonatomic, copy) NSString *taskID;
+@property (nonatomic, readonly) NSString *taskID;
+@property (nonatomic, readonly) NSString *title; // KVO-compliant, automatically updated on background queue
 @end
