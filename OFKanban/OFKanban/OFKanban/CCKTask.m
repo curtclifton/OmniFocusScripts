@@ -62,13 +62,15 @@ static OSAScript *fetchingScript;
 - (void)enqueueInitializationBlock;
 {
     [_TaskDetailFetchQueue addOperationWithBlock:^{
-        // CCC, 7/3/2012. Implement.
         NSString *handlerName = @"gettaskinfo";
         NSArray *arguments = [NSArray arrayWithObject:self.taskID];
         
-        NSDictionary *taskFieldDictionary = [fetchingScript executeHandlerWithName:handlerName arguments:arguments];
+        id result = [fetchingScript executeHandlerWithName:handlerName arguments:arguments];
+        NSAssert([result isKindOfClass:[NSDictionary class]],@"expected dictionary");
+        NSDictionary *taskFieldDictionary = result;
         
         self.title = [taskFieldDictionary objectForKey:@"title"];
+        // CCC, 7/10/2012. Initialize other properties
         NSLog(@"initialized: %@", self);        
     }];
 }
