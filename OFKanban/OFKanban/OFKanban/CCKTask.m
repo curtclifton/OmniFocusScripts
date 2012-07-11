@@ -28,7 +28,8 @@ static OSAScript *fetchingScript;
 
 + (void)initialize;
 {
-    _TaskDetailFetchQueue = [NSOperationQueue new];    
+    _TaskDetailFetchQueue = [NSOperationQueue new];
+    _TaskDetailFetchQueue.maxConcurrentOperationCount = 1;
     fetchingScript = [OSAScript scriptWithName:@"GetTaskInfo" inBundle:[NSBundle bundleForClass:self]];
 }
 
@@ -66,6 +67,13 @@ static OSAScript *fetchingScript;
         NSArray *arguments = [NSArray arrayWithObject:self.taskID];
         
         id result = [fetchingScript executeHandlerWithName:handlerName arguments:arguments];
+        if ([result isKindOfClass:[NSArray class]]) {
+            // Script returns an empty record to indicate no task found matching the taskID
+            NSArray *notFoundArray = result;
+            NSAssert([notFoundArray count] == 0, @"expected empty array in error case");
+            [NSException raise:NSObjectNotAvailableException format:@"No OmniFocus task found with id: %@", self.taskID];
+        }
+            
         NSAssert([result isKindOfClass:[NSDictionary class]],@"expected dictionary");
         NSDictionary *taskFieldDictionary = result;
         
