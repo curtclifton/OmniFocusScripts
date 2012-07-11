@@ -12,12 +12,12 @@
 #import "CCKTaskFactory.h"
 
 @implementation CCKAppDelegate
-@synthesize window = _window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
     // CCC, 6/24/2012. Just hacking this in here for experimentation:
+    // CCC, 7/10/2012. Need to fetch these on a background queue too.
     NSArray *backlog = [CCKTaskFactory backlogTasks];
     NSLog(@"backlog:\n%@", backlog);
     NSArray *ready = [CCKTaskFactory readyTasks];
