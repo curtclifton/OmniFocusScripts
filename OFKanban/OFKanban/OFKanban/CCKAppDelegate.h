@@ -12,8 +12,8 @@
 
 @interface CCKAppDelegate : NSObject <NSApplicationDelegate>
 
++ (NSOperationQueue *)omniFocusFetchQueue;
+
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet CCKKanbanView *collectionView;
-// CCC, 7/10/2012. Make separate, infinitely tall views with a title and a list of notes.
 
 @end

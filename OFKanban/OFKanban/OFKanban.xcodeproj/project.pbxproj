@@ -13,11 +13,10 @@
 		F706221A156CB47A0023500A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F7062218156CB47A0023500A /* Credits.rtf */; };
 		F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F706221C156CB47A0023500A /* CCKAppDelegate.m */; };
 		F7062220156CB47B0023500A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F706221E156CB47B0023500A /* MainMenu.xib */; };
-		F716096415979C840075CEE9 /* CCKTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F716096315979C840075CEE9 /* CCKTaskFactory.m */; };
+		F716096415979C840075CEE9 /* CCKTaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = F716096315979C840075CEE9 /* CCKTaskList.m */; };
 		F716096615979D530075CEE9 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F716096515979D530075CEE9 /* OSAKit.framework */; };
 		F71609671597A6AC0075CEE9 /* GetTasks.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F716096115979B180075CEE9 /* GetTasks.scpt */; };
 		F716096A1597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m in Sources */ = {isa = PBXBuildFile; fileRef = F71609691597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m */; };
-		F740769D15AD37330067FB54 /* CCKKanbanView.m in Sources */ = {isa = PBXBuildFile; fileRef = F740769C15AD37330067FB54 /* CCKKanbanView.m */; };
 		F78175541575C80400CF3201 /* CCKTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F78175531575C80400CF3201 /* CCKTask.m */; };
 		F78647CB15A3F97200113040 /* GetTaskInfo.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F78647C915A3F67200113040 /* GetTaskInfo.scpt */; };
 		F78647CE15A3FC4400113040 /* OSAScript+CCKAppleScript.m in Sources */ = {isa = PBXBuildFile; fileRef = F78647CD15A3FC4400113040 /* OSAScript+CCKAppleScript.m */; };
@@ -40,13 +39,11 @@
 		F7062226156CB5140023500A /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		F7062228156CB80A0023500A /* OmniFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniFocus.h; sourceTree = "<group>"; };
 		F716096115979B180075CEE9 /* GetTasks.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = GetTasks.scpt; sourceTree = "<group>"; };
-		F716096215979C840075CEE9 /* CCKTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTaskFactory.h; sourceTree = "<group>"; };
-		F716096315979C840075CEE9 /* CCKTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTaskFactory.m; sourceTree = "<group>"; };
+		F716096215979C840075CEE9 /* CCKTaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTaskList.h; sourceTree = "<group>"; };
+		F716096315979C840075CEE9 /* CCKTaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTaskList.m; sourceTree = "<group>"; };
 		F716096515979D530075CEE9 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
 		F71609681597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+CCKValueUnboxing.h"; sourceTree = "<group>"; };
 		F71609691597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+CCKValueUnboxing.m"; sourceTree = "<group>"; };
-		F740769B15AD37330067FB54 /* CCKKanbanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKKanbanView.h; sourceTree = "<group>"; };
-		F740769C15AD37330067FB54 /* CCKKanbanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKKanbanView.m; sourceTree = "<group>"; };
 		F78175521575C80400CF3201 /* CCKTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTask.h; sourceTree = "<group>"; };
 		F78175531575C80400CF3201 /* CCKTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTask.m; sourceTree = "<group>"; };
 		F78647C915A3F67200113040 /* GetTaskInfo.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = GetTaskInfo.scpt; sourceTree = "<group>"; };
@@ -117,14 +114,12 @@
 				F78175531575C80400CF3201 /* CCKTask.m */,
 				F716096115979B180075CEE9 /* GetTasks.scpt */,
 				F78647C915A3F67200113040 /* GetTaskInfo.scpt */,
-				F716096215979C840075CEE9 /* CCKTaskFactory.h */,
-				F716096315979C840075CEE9 /* CCKTaskFactory.m */,
+				F716096215979C840075CEE9 /* CCKTaskList.h */,
+				F716096315979C840075CEE9 /* CCKTaskList.m */,
 				F71609681597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.h */,
 				F71609691597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m */,
 				F78647CC15A3FC4400113040 /* OSAScript+CCKAppleScript.h */,
 				F78647CD15A3FC4400113040 /* OSAScript+CCKAppleScript.m */,
-				F740769B15AD37330067FB54 /* CCKKanbanView.h */,
-				F740769C15AD37330067FB54 /* CCKKanbanView.m */,
 			);
 			path = OFKanban;
 			sourceTree = "<group>";
@@ -211,10 +206,9 @@
 				F7062216156CB47A0023500A /* main.m in Sources */,
 				F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */,
 				F78175541575C80400CF3201 /* CCKTask.m in Sources */,
-				F716096415979C840075CEE9 /* CCKTaskFactory.m in Sources */,
+				F716096415979C840075CEE9 /* CCKTaskList.m in Sources */,
 				F716096A1597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m in Sources */,
 				F78647CE15A3FC4400113040 /* OSAScript+CCKAppleScript.m in Sources */,
-				F740769D15AD37330067FB54 /* CCKKanbanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

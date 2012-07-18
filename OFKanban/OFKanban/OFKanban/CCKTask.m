@@ -10,10 +10,9 @@
 
 #import <OSAKit/OSAKit.h>
 
+#import "CCKAppDelegate.h"
 #import "NSAppleEventDescriptor+CCKValueUnboxing.h"
 #import "OSAScript+CCKAppleScript.h"
-
-NSOperationQueue *_TaskDetailFetchQueue;
 
 static OSAScript *fetchingScript;
 
@@ -28,8 +27,6 @@ static OSAScript *fetchingScript;
 
 + (void)initialize;
 {
-    _TaskDetailFetchQueue = [NSOperationQueue new];
-    _TaskDetailFetchQueue.maxConcurrentOperationCount = 1;
     fetchingScript = [OSAScript scriptWithName:@"GetTaskInfo" inBundle:[NSBundle bundleForClass:self]];
 }
 
@@ -62,7 +59,7 @@ static OSAScript *fetchingScript;
 
 - (void)enqueueInitializationBlock;
 {
-    [_TaskDetailFetchQueue addOperationWithBlock:^{
+    [[CCKAppDelegate omniFocusFetchQueue] addOperationWithBlock:^{
         NSString *handlerName = @"gettaskinfo";
         NSArray *arguments = [NSArray arrayWithObject:self.taskID];
         

@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CCKTaskFactory : NSObject
-+ (NSArray *)backlogTasks;
-+ (NSArray *)readyTasks;
-+ (NSArray *)workInProgressTasks;
-+ (NSArray *)recentlyDoneTasks;
+@interface CCKTaskList : NSObject
++ (CCKTaskList *)backlogTasks;
++ (CCKTaskList *)readyTasks;
++ (CCKTaskList *)workInProgressTasks;
++ (CCKTaskList *)recentlyDoneTasks;
 @end
