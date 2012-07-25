@@ -10,15 +10,13 @@
 
 #import "OmniFocus.h"
 #import "CCKTaskList.h"
+#import "CCKTaskListController.h"
 
 static NSOperationQueue *_OmniFocusFetchQueue;
-// CCC, 7/17/2012. Hang on to these here for the moment so ARC doesn't helpfully autorelease them.
-static CCKTaskList *backlog;
-static CCKTaskList *ready;
-static CCKTaskList *workInProgress;
-static CCKTaskList *recentlyDone;
 
 @implementation CCKAppDelegate
+
+#pragma mark Class methods
 
 + (void)initialize;
 {
@@ -31,19 +29,24 @@ static CCKTaskList *recentlyDone;
     return _OmniFocusFetchQueue;
 }
 
+#pragma mark NSApplicationDelegate protocol
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    // CCC, 6/24/2012. Just hacking this in here for experimentation:
-    // CCC, 7/10/2012. Need to fetch these on a background queue too.
-    backlog = [CCKTaskList backlogTasks];
-    NSLog(@"backlog:\n%@", backlog);
-    ready = [CCKTaskList readyTasks];
-    NSLog(@"ready:\n%@", ready);
-    workInProgress = [CCKTaskList workInProgressTasks];
-    NSLog(@"workInProgress:\n%@", workInProgress);
-    recentlyDone = [CCKTaskList recentlyDoneTasks];
-    NSLog(@"recentlyDone:\n%@", recentlyDone);
+    self.backlogController = [[CCKTaskListController alloc] initWithTaskList:[CCKTaskList backlogTasks] tableView:self.backlogTableView];
+    
+    self.readyController = [[CCKTaskListController alloc] initWithTaskList:[CCKTaskList readyTasks] tableView:self.readyTableView];
+    
+    self.workInProgressController = [[CCKTaskListController alloc] initWithTaskList:[CCKTaskList workInProgressTasks] tableView:self.workInProgressTableView];
+    
+    self.recentlyDoneController = [[CCKTaskListController alloc] initWithTaskList:[CCKTaskList recentlyDoneTasks] tableView:self.recentlyDoneTableView];
+    
 }
+
+#pragma mark Public API
+
+#pragma mark Private API
+
 
 @end

@@ -13,6 +13,7 @@
 		F706221A156CB47A0023500A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F7062218156CB47A0023500A /* Credits.rtf */; };
 		F706221D156CB47A0023500A /* CCKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F706221C156CB47A0023500A /* CCKAppDelegate.m */; };
 		F7062220156CB47B0023500A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F706221E156CB47B0023500A /* MainMenu.xib */; };
+		F70D2DB815BF9FF5008FDBE8 /* CCKTaskListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70D2DB715BF9FF5008FDBE8 /* CCKTaskListController.m */; };
 		F716096415979C840075CEE9 /* CCKTaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = F716096315979C840075CEE9 /* CCKTaskList.m */; };
 		F716096615979D530075CEE9 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F716096515979D530075CEE9 /* OSAKit.framework */; };
 		F71609671597A6AC0075CEE9 /* GetTasks.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F716096115979B180075CEE9 /* GetTasks.scpt */; };
@@ -38,6 +39,8 @@
 		F706221F156CB47B0023500A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F7062226156CB5140023500A /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		F7062228156CB80A0023500A /* OmniFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniFocus.h; sourceTree = "<group>"; };
+		F70D2DB615BF9FF5008FDBE8 /* CCKTaskListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTaskListController.h; sourceTree = "<group>"; };
+		F70D2DB715BF9FF5008FDBE8 /* CCKTaskListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTaskListController.m; sourceTree = "<group>"; };
 		F716096115979B180075CEE9 /* GetTasks.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = GetTasks.scpt; sourceTree = "<group>"; };
 		F716096215979C840075CEE9 /* CCKTaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCKTaskList.h; sourceTree = "<group>"; };
 		F716096315979C840075CEE9 /* CCKTaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCKTaskList.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				F78647C915A3F67200113040 /* GetTaskInfo.scpt */,
 				F716096215979C840075CEE9 /* CCKTaskList.h */,
 				F716096315979C840075CEE9 /* CCKTaskList.m */,
+				F70D2DB615BF9FF5008FDBE8 /* CCKTaskListController.h */,
+				F70D2DB715BF9FF5008FDBE8 /* CCKTaskListController.m */,
 				F71609681597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.h */,
 				F71609691597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m */,
 				F78647CC15A3FC4400113040 /* OSAScript+CCKAppleScript.h */,
@@ -209,6 +214,7 @@
 				F716096415979C840075CEE9 /* CCKTaskList.m in Sources */,
 				F716096A1597E50E0075CEE9 /* NSAppleEventDescriptor+CCKValueUnboxing.m in Sources */,
 				F78647CE15A3FC4400113040 /* OSAScript+CCKAppleScript.m in Sources */,
+				F70D2DB815BF9FF5008FDBE8 /* CCKTaskListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

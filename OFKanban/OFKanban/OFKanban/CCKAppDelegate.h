@@ -8,12 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class CCKKanbanView;
+@class CCKKanbanView, CCKTaskListController;
 
 @interface CCKAppDelegate : NSObject <NSApplicationDelegate>
 
 + (NSOperationQueue *)omniFocusFetchQueue;
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTableView *backlogTableView;
+@property (weak) IBOutlet NSTableView *readyTableView;
+@property (weak) IBOutlet NSTableView *workInProgressTableView;
+@property (weak) IBOutlet NSTableView *recentlyDoneTableView;
+
+@property (strong) CCKTaskListController *backlogController;
+@property (strong) CCKTaskListController *readyController;
+@property (strong) CCKTaskListController *workInProgressController;
+@property (strong) CCKTaskListController *recentlyDoneController;
 
 @end
