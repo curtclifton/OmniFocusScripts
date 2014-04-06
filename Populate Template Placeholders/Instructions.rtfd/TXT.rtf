@@ -1,4 +1,4 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
 {\colortbl;\red255\green255\blue255;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
@@ -24,21 +24,11 @@ Here is a script that will take an OmniFocus project, duplicate it, replace plac
 \b\fs28 \cf0 Installation \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b0\fs24 \cf0 To install, save the script in 
-\f1\fs22 ~/Library/Scripts/Applications/OmniFocus
-\f0\fs24 . (You may need to create that folder.)  You can then use Customize Toolbar to add the script to the toolbar in OmniFocus.\
-\
-To assign a custom icon. Open one of the PNG's in Preview, hit 
-\f1 \uc0\u8984 
-\f0 A and 
-\f1 \uc0\u8984 
-\f0 C. Then go to the Finder and open the Info Dialog for Populate Template Placeholders.scpt. Click on the script icon twice (slowly, not double). The script icon (scroll) will be outlined in blue. Then just 
-\f1 \uc0\u8984 
-\f0 V to paste the icon. Relaunch OmniFocus for the change to show up.\
-\
- {{\NeXTGraphic scroll icon.png \width5300 \height2820
-}¬}\
-\
+\b0\fs24 \cf0 In OmniFocus, choose Help 
+\f1 \uc0\u8594  
+\f0 Open Scripts Folder. Drag the 
+\f1\fs22 Populate Templates Placeholder
+\f0\fs24  file into the scripts folder. You can then use Customize Toolbar to add the script to the toolbar in OmniFocus.\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
@@ -143,7 +133,9 @@ curt.clifton@mac.com\
 \fs24 \
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
 \ls1\ilvl0
-\b0 \cf0 {\listtext	\'95	}0.7.1, gracefully handles more unexpected user actions\
+\b0 \cf0 {\listtext	\'95	}0.8, updated for OmniFocus 2 and to use Notification Center\
+{\listtext	\'95	}0.7.2b, turns off autosave during execution of duplication and change to reduce number of transactions created. Fixed bug in handling of projects without placeholders. Thanks to Tommy Bollman for the fix. Removes Growl support.\
+{\listtext	\'95	}0.7.1, gracefully handles more unexpected user actions\
 {\listtext	\'95	}0.7, populates projects with dates but no other placeholders, cleans up after itself on Cancel\
 {\listtext	\'95	}0.6.2, detects if user is attempting to Populate something other than a Project\
 {\listtext	\'95	}0.6.1, optimized placeholder replacement: fixes bug with apostrophes in replacements and is also faster\
@@ -168,7 +160,7 @@ curt.clifton@mac.com\
 \fs24 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\b0 \cf0 Copyright \'a9 2007\'962009, Curtis Clifton\
+\b0 \cf0 Copyright \'a9 2007\'962014, Curtis Clifton\
 	\
 All rights reserved.\
 	\
